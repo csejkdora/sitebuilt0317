@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Overpass:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f7f3;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #1a24fb;
+  color: #f8f7f3;
+}
+.titlenav {
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  font-weight: normal;
+}
+#icon {
+  font-size: 24px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.container .cards {
+  width: 90%;
+  margin-left: 2rem;
+  margin-top: 30px;
+  display: grid;
+  gap: 100px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  max-width: 350px;
+  height: 600px;
+  margin: 100px;
+  border: 1px solid #1a24fb;
+  color: #1a24fb;
+  background-color: #f8f7f3;
+}
+.data {
+  border: 1px solid #1a24fb;
+  color: #1a24fb;
+}
+
+.number {
+  top: 0px;
+  right: 0px;
+  padding: 1rem;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  background-color: #f8f7f3;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: #1a24fb;
+  font-weight: bold;
+}
+button {
+  width: 100%;
+  height: 18px;
+  border: none;
+  background-color: #f8f7f3;
+  color: #1a24fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a24fb;
+  color: #f8f7f3;
+}
+
+#arrow {
+  font-size: 18px;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.sub {
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+}
+.text {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 1.5rem 2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1100px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+  }
+}
